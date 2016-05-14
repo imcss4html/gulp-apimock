@@ -1,5 +1,5 @@
 
-## gulp plugin to run api mock
+## gulp plugin to run api mock, support jsonp.
 
 
 ## USAGE:
@@ -23,10 +23,12 @@ module.exports = {
 * request 
 ```javascript
 http://yourhost:8000/api/vote
+http://yourhost:8000/api/vote?callback=mock_test
 ```
 
 * response 
 ```javascript
 {'code':1, 'msg':'test the mock'}
- ```
+mock_test({'code':1, 'msg':'test the mock'})
+```
 

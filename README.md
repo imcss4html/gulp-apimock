@@ -1,4 +1,4 @@
-# gulp-apimock
+
 ## gulp plugin to run api mock
 
 
@@ -6,7 +6,8 @@
 ```javascript
  npm install
  gulp webserver
-```javascript
+```
+
 
 * edit the file: config.js
 ```javascript

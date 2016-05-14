@@ -2,21 +2,23 @@
 ## gulp plugin to run api mock
 
 
-
-## $  npm install
-
-## $  gulp webserver
-
- edit the file: config.js
+## USEAGE:
 ```javascript
-  var ihubo = {
-    nickName  : "草依山",
-    site : "http://jser.me"
-  }
-  ```
- edit the folder: mock/
+ npm install
+ gulp webserver
+```javascript
 
- request http://yourhost:8000/api/vote
+* edit the file: config.js
+```javascript
+module.exports = {
+    '/api/vote':'vote.json',
+    '/api/getUserInfo':'getUserInfo.json',
+    '/api/apply':'apply.json'
+}
+ ```
+* edit the folder: mock/
 
- response the content: content of file mock/vote.json
+* request http://yourhost:8000/api/vote
+
+* response the content: content of file mock/vote.json
 

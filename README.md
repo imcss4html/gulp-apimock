@@ -12,14 +12,21 @@
 * edit the file: config.js
 ```javascript
 module.exports = {
-    '/api/vote':'vote.json',
-    '/api/getUserInfo':'getUserInfo.json',
-    '/api/apply':'apply.json'
+    '/api/vote':'vote.json'
 }
  ```
-* edit the folder: mock/
+* edit the file: mock/vote.json
+```javascript
+{'code':1, 'msg':'test the mock'}
+ ```
+ 
+* request 
+ ```javascript
+ http://yourhost:8000/api/vote
+  ```
 
-* request http://yourhost:8000/api/vote
-
-* response the content: content of file mock/vote.json
+* response 
+```javascript
+{'code':1, 'msg':'test the mock'}
+ ```
 

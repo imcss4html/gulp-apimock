@@ -3,7 +3,7 @@ var gulp = require('gulp');
 var mockApi = require('./mockApi');
 var webserver = require('gulp-webserver');
 var url = require('url');
-gulp.task('webserver', function() {
+gulp.task('default', function() {
     gulp.src('./app')
         .pipe(webserver({
             middleware: function(req, res, next) {

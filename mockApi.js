@@ -19,6 +19,7 @@ var mockApi = function(res, pathname, paramObj, next) {
         res.setHeader('Content-type', 'application/javascript');
         res.end(paramObj.callback + '(' + result + ')');
     }else{
+        res.setHeader('Access-Control-Allow-Origin','*');
         res.setHeader('Content-Type', 'application/json');
         res.end(result);
     }

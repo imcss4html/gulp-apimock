@@ -4,8 +4,7 @@ var fs = require('fs');
 var path = require('path');
 
 var mockbase = path.join(__dirname, 'mock');
-var route_config = require('./config');
-var mockApi = function(res, pathname, paramObj, next) {
+var mockApi = function(res, pathname, paramObj, route_config, next) {
     var mock_file_name = route_config[pathname];
     console.log("request:"+(pathname||"unknow")+" mock_file_name:"+(mock_file_name||"unknow")+" jsonp:"+(paramObj.callback?'yes':'no'));
     var result = null;

@@ -8,7 +8,7 @@
 ```
 
 ```javascript
-gulp
+ gulp
 ```
 
 * edit the file: config.js

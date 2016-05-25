@@ -5,7 +5,7 @@
 ## USAGE:
 ```javascript
  npm install
- gulp webserver
+ gulp
 ```
 
 * edit the file: config.js

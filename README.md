@@ -5,7 +5,10 @@
 ## USAGE:
 ```javascript
  npm install
- gulp
+```
+
+```javascript
+gulp
 ```
 
 * edit the file: config.js

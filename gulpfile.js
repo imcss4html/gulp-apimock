@@ -10,9 +10,10 @@ function getConfig(){
     var file_buffer = fs.readFileSync("./config.js");
         file_text = file_buffer.toString();
 
-    file_text.replace(/'/mg, "\""); //发现 JSON.parse 含有单引号会有问题
+    file_text = file_text.replace(/'/mg, "\""); //发现 JSON.parse 含有单引号会有问题
     try{
         route_config = JSON.parse(file_text);
+        console.log(route_config)
         return true;
     }catch(e){
         console.log("config.js formate error");
